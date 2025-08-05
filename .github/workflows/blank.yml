@@ -2,40 +2,36 @@
 
 name: CI
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+on:  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-
-
 jobs:
-    job1:
-        name: First Job
-        runs-on: ubuntu-latest
-        steps:
-            - name: Step one
-              uses: actions/checkout@v2
-            - name: Step two
-              run: echo Hello, world!
-    job2:
-        name: Second Job
-        runs-on: windows-latest
-        steps:
-            - name: Step one
-              uses: actions/checkout@v2
-            - name: Step two
-              run: echo Hello, world Seond!
-      job3:
-          name: Thers Job
-          runs-on: macos-latest
-          steps:
-              - name: Step one
-                uses: actions/checkout@v2
-              - name: Step two
-                run: echo Hello Worlld Three!
-          
-      
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: echo Hello, world!
+
+  job2:
+    name: Second Job
+    runs-on: windows-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: echo Hello, world Second!
+
+  job3:
+    name: Third Job
+    runs-on: macos-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: echo Hello World Three!
