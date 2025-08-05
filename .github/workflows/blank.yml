@@ -28,7 +28,7 @@ jobs:
         run: echo Hello, world Second!
 
   job3:
-    name: Third Job
+    name: Thirsd Job
     runs-on: macos-latest
     steps:
       - name: Step one
