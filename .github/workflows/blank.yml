@@ -29,4 +29,13 @@ jobs:
               uses: actions/checkout@v2
             - name: Step two
               run: echo Hello, world Seond!
+      job3:
+          name: Thers Job
+          runs-on: macos-latest
+          steps:
+              - name: Step Toe
+                uses: actions/checkout@v2
+              - name: Step three
+                run: echo Hello Worlld Three!
+          
       
