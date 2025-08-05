@@ -33,9 +33,9 @@ jobs:
           name: Thers Job
           runs-on: macos-latest
           steps:
-              - name: Step Toe
+              - name: Step one
                 uses: actions/checkout@v2
-              - name: Step three
+              - name: Step two
                 run: echo Hello Worlld Three!
           
       
